@@ -78,7 +78,7 @@
                 &trans      &trans     &trans        &trans          &trans
                 &kp DEL        &trans     &trans        &trans          &trans           
             >;  
-            sensor-bindings = <&rgb_ug RGB_EFF RGB_EFR &rgb_ug RGB_BRI RGB_BRD>;
+            sensor-bindings = <&inc_dec_kp RGB_EFF RGB_EFR &inc_dec_kp RGB_BRI RGB_BRD>;
                 
         };
     };
