@@ -1,0 +1,15 @@
+encoder_1: encoder_left {
+        compatible = "alps,ec11";
+        label = "encoder_1";
+        a-gpios = <PIN_A (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <PIN_B (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <8>;
+    };
+
+encoder_2: encoder_right {
+        compatible = "alps,ec11";
+        label = "encoder_2";
+        a-gpios = <PIN_A (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <PIN_B (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        resolution = <4>;
+    };
