@@ -65,7 +65,7 @@
                 &mo 1            &kp KP_N1    &kp KP_N2       &kp KP_N3         &kp KP_ENTER
                 &kp BSPC         &kp KP_N0    &trans          &kp KP_DOT        &trans
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 
         }; 
         
@@ -79,7 +79,7 @@
                 &trans      &bt BT_SEL 1     &bt BT_SEL 2        &bt BT_SEL 3          &rgb_ug RGB_COLOR_HSB(360,0,100)
                 &kp DEL     &trans     &trans        &trans          &trans           
             >;  
-            sensor-bindings = <&inc_dec_kp PG_DN PG_UP &inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
                 
         };
     };
