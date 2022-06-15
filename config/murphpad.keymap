@@ -72,7 +72,7 @@
         fn_layer {
             label = "Config Layer";
             bindings = <
-                &trans      &rgb_ug RGB_TOG     &rgb_ug RGB_EFF        &rgb_ug RGB_EFR          &rgb_ug RGB_COLOR_HSB(240,100,50)  
+                &trans      &trans     &rgb_ug RGB_EFF        &rgb_ug RGB_EFR          &rgb_ug RGB_COLOR_HSB(240,100,50)  
                 &trans      &kp KP_NUM &trans        &trans          &rgb_ug RGB_BRD     
                 &trans      &trans     &trans        &trans          &rgb_ug RGB_BRI
                 &bt BT_CLR  &trans     &trans        &trans          &trans    
