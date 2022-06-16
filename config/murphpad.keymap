@@ -92,7 +92,7 @@
         dungeons_and_dragons {
             label = "D&D";
             bindings = <
-                &trans          &kp LC(LA(F12)) &kp LC(LA(F10))     &kp LC(LA(F11))  	&kp LG(D)   
+                &trans          &kp LC(LA(F12)) &kp LC(LA(F11))     &kp LC(LA(F10))  	&kp LG(D)   
                 &trans           &to L_SOCIAL   &kp KP_DIVIDE   	&kp KP_MULTIPLY		&kp KP_MINUS    
                 &trans           &kp F7      	&kp F8          	&kp F9      		&kp KP_PLUS   
                 &kp C_MUTE       &kp F4     	&kp F5       	    &kp F6      		&trans
