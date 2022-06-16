@@ -106,7 +106,7 @@
         social_controls {   
             label = "Social";
             bindings = <
-                &trans          &kp LC(LA(F12)) &kp LC(LA(F10))     &kp LC(LA(F11))  	&kp LG(D)   
+                &trans          &kp LC(LA(F12)) &kp LC(LA(F11))     &kp LC(LA(F10))  	&kp LG(D)   
                 &trans          &to L_DEFAULT   &kp KP_DIVIDE   	&kp KP_MULTIPLY		&kp KP_MINUS    
                 &trans      	&kp HOME		&kp UP          	&kp PG_UP         	&kp KP_PLUS   
                 &kp C_MUTE  	&kp LEFT		&kp SPACE       	&kp RIGHT         	&trans
