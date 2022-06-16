@@ -11,10 +11,10 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define TIMEOUT 300
-#define DEFAULT 0
-#define CONFIG 1
-#define NAV 2
-#define FG 3
+#define L_DEFAULT 0
+#define L_CONFIG 1
+#define L_NAV 2
+#define L_FG 3
 
 &encoder_1 {
     status = "okay";
@@ -62,10 +62,10 @@
             label = "Numpad";
             bindings = <
                 &bt BT_CLR       &kp TAB      	&kp F5          	&kp LC(LA(C))  		&kp LG(D)   
-                &rgb_ug RGB_TOG  &to NAV        &kp KP_DIVIDE   	&kp KP_MULTIPLY		&kp KP_MINUS    
+                &rgb_ug RGB_TOG  &to L_NAV      &kp KP_DIVIDE   	&kp KP_MULTIPLY		&kp KP_MINUS    
                 &rgb_ug RGB_EFF  &kp KP_N7    	&kp KP_N8       	&kp KP_N9      		&kp KP_PLUS   
                 &kp C_MUTE       &kp KP_N4    	&kp KP_N5       	&kp KP_N6      		&trans
-                &mo CONFIG       &kp KP_N1    	&kp KP_N2       	&kp KP_N3      		&kp KP_ENTER
+                &mo L_CONFIG     &kp KP_N1      &kp KP_N2       	&kp KP_N3      		&kp KP_ENTER
                 &kp BSPC         &kp KP_N0    	&trans          	&kp KP_DOT     		&trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
@@ -90,10 +90,10 @@
             label = "Navigate";
             bindings = <
                 &bt BT_CLR  	&kp TAB 		&kp LC(C)       	&kp LC(V)         	&kp LG(D)   
-                &trans      	&to FG   		&kp KP_DIVIDE   	&kp KP_MULTIPLY   	&kp KP_MINUS    
+                &trans      	&to L_FG   		&kp KP_DIVIDE   	&kp KP_MULTIPLY   	&kp KP_MINUS    
                 &trans      	&kp HOME		&kp UP          	&kp PG_UP         	&kp KP_PLUS   
                 &kp C_MUTE  	&kp LEFT		&kp SPACE       	&kp RIGHT         	&trans
-                &mo CONFIG     	&kp END 		&kp DOWN        	&kp PG_DN         	&kp KP_ENTER
+                &mo L_CONFIG    &kp END 		&kp DOWN        	&kp PG_DN         	&kp KP_ENTER
                 &kp BSPC    	&kp INS 		&trans          	&kp DEL           	&trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LC(Z) LC(Y)>;
@@ -104,10 +104,10 @@
             label = "F_Grounds";
             bindings = <
                 &bt BT_CLR       &kp TAB      	&kp F5          	&kp LC(LA(C))  		&kp LG(D)   
-                &trans           &to DEFAULT    &kp KP_DIVIDE   	&kp KP_MULTIPLY		&kp KP_MINUS    
+                &trans           &to L_DEFAULT    &kp KP_DIVIDE   	&kp KP_MULTIPLY		&kp KP_MINUS    
                 &trans           &kp F7      	&kp F8          	&kp F9      		&kp KP_PLUS   
                 &kp C_MUTE       &kp F4     	&kp F5       	    &kp F6      		&trans
-                &mo CONFIG       &kp F1     	&kp F2       	    &kp F3      		&kp KP_ENTER
+                &mo L_CONFIG     &kp F1     	&kp F2       	    &kp F3      		&kp KP_ENTER
                 &kp BSPC         &kp F0     	&trans          	&kp KP_DOT     		&trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
