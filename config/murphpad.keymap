@@ -133,12 +133,12 @@
         screen_setup {
             label = "Layout";
             bindings = <
-                &trans     &trans      			&trans          	&trans  			&trans   
-                &trans     &trans      			&trans          	&trans  			&trans   
-                &trans     &kp LC(LA(LWIN(7))) 	&kp LC(LA(LWIN(8))) &kp LC(LA(LWIN(9))) &trans   
-                &trans     &kp LC(LA(LWIN(4))) 	&kp LC(LA(LWIN(5))) &kp LC(LA(LWIN(6))) &trans
-                &trans     &kp LC(LA(LWIN(1)))  &kp LC(LA(LWIN(2))) &kp LC(LA(LWIN(3))) &trans
-                &trans     &kp LC(LA(LWIN(0))) 	&trans          	&trans     			&trans
+                &trans     &trans      			&trans          	 &trans  				&trans   
+                &trans     &trans      			&trans          	 &trans  				&trans   
+                &trans     &kp LC(LA(LWIN(N7))) &kp LC(LA(LWIN(N8))) &kp LC(LA(LWIN(N9))) 	&trans   
+                &trans     &kp LC(LA(LWIN(N4))) &kp LC(LA(LWIN(N5))) &kp LC(LA(LWIN(N6))) 	&trans
+                &trans     &kp LC(LA(LWIN(N1))) &kp LC(LA(LWIN(N2))) &kp LC(LA(LWIN(N3))) 	&trans
+                &trans     &kp LC(LA(LWIN(N0))) &trans          	 &trans     			&trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 
