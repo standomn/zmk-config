@@ -51,6 +51,151 @@
         };
     };
     
+	macros {
+		macro_name: LAYOUT0 {
+			label = "Layout 0";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N0>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		macro_name: LAYOUT1 {
+			label = "Layout 1";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N1>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		macro_name: LAYOUT2 {
+			label = "Layout 2";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N2>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		macro_name: LAYOUT3 {
+			label = "Layout 3";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N3>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		macro_name: LAYOUT4 {
+			label = "Layout 4";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N4>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		macro_name: LAYOUT5 {
+			label = "Layout 5";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N5>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		macro_name: LAYOUT6 {
+			label = "Layout 6";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N6>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		macro_name: LAYOUT7 {
+			label = "Layout 7";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N7>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		macro_name: LAYOUT8 {
+			label = "Layout 8";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N8>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		
+		macro_name: LAYOUT9 {
+			label = "Layout 9";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LC>
+				, <&macro_press &kp LWIN>
+				, <&macro_press &kp LA>
+				, <&macro_tap &kp N9>
+				, <&macro_release &kp LA>
+				, <&macro_release &kp LWIN>
+				, <&macro_release &kp LC>
+				;
+		};
+		
+	};
+	
     sensors {
         compatible = "zmk,keymap-sensors";
         sensors = <&encoder_1 &encoder_2>;
@@ -133,12 +278,12 @@
         screen_setup {
             label = "Layout";
             bindings = <
-                &trans     &trans      			&trans          	 &trans  				&trans   
-                &trans     &trans      			&trans          	 &trans  				&trans   
-                &trans     &kp LC(LA(LWIN(N7))) &kp LC(LA(LWIN(N8))) &kp LC(LA(LWIN(N9))) 	&trans   
-                &trans     &kp LC(LA(LWIN(N4))) &kp LC(LA(LWIN(N5))) &kp LC(LA(LWIN(N6))) 	&trans
-                &trans     &kp LC(LA(LWIN(N1))) &kp LC(LA(LWIN(N2))) &kp LC(LA(LWIN(N3))) 	&trans
-                &trans     &kp LC(LA(LWIN(N0))) &trans          	 &trans     			&trans
+                &trans     		&trans   		&trans   		&trans  		&trans   
+                &trans     		&trans   		&trans   		&trans  		&trans   
+                &trans     		&LAYOUT7 		&LAYOUT8 		&LAYOUT9 		&trans   
+                &trans     		&LAYOUT4 		&LAYOUT5 		&LAYOUT6 		&trans
+                &trans     		&LAYOUT1 		&LAYOUT2 		&LAYOUT3 		&trans
+                &trans     		&LAYOUT0 		&trans   		&trans      	&trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 
