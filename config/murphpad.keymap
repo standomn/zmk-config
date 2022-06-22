@@ -57,13 +57,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N0>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		macro_name: LAYOUT1 {
@@ -71,13 +67,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N1>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		macro_name: LAYOUT2 {
@@ -85,13 +77,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N2>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		macro_name: LAYOUT3 {
@@ -99,13 +87,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N3>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		macro_name: LAYOUT4 {
@@ -113,13 +97,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N4>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		macro_name: LAYOUT5 {
@@ -127,13 +107,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N5>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		macro_name: LAYOUT6 {
@@ -141,13 +117,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N6>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		macro_name: LAYOUT7 {
@@ -155,13 +127,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N7>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		macro_name: LAYOUT8 {
@@ -169,13 +137,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N8>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		
@@ -184,13 +148,9 @@
 			compatible = "zmk,behavior-macro";
 			#binding-cells = <0>;
 			bindings
-				= <&macro_press &kp LC>
-				, <&macro_press &kp LWIN>
-				, <&macro_press &kp LA>
+				= <&macro_press &kp LC &kp LWIN &kp LA>
 				, <&macro_tap &kp N9>
-				, <&macro_release &kp LA>
-				, <&macro_release &kp LWIN>
-				, <&macro_release &kp LC>
+				, <&macro_release &kp LC &kp LWIN &kp LA>
 				;
 		};
 		
