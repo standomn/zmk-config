@@ -17,6 +17,7 @@
 #define L_DND 2
 #define L_SOCIAL 3
 #define L_CONFIG 4
+#define L_LAYOUT 5
 
 &encoder_1 {
     status = "okay";
@@ -123,10 +124,25 @@
                 &trans      	&trans          &trans        	&trans          &rgb_ug RGB_BRI
                 &bt BT_CLR  	&trans          &trans        	&trans          &trans    
                 &trans      	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3    &rgb_ug RGB_COLOR_HSB(360,0,100)
-                &kp DEL     	&trans          &trans          &trans          &trans           
+                &mo L_LAYOUT    &trans          &trans          &trans          &trans           
             >;  
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
                 
         };
+        
+        screen_setup {
+            label = "Layout";
+            bindings = <
+                &trans     &trans      			&trans          	&trans  			&trans   
+                &trans     &trans      			&trans          	&trans  			&trans   
+                &trans     &kp LC(LA(LWIN(7))) 	&kp LC(LA(LWIN(8))) &kp LC(LA(LWIN(9))) &trans   
+                &trans     &kp LC(LA(LWIN(4))) 	&kp LC(LA(LWIN(5))) &kp LC(LA(LWIN(6))) &trans
+                &trans     &kp LC(LA(LWIN(1)))  &kp LC(LA(LWIN(2))) &kp LC(LA(LWIN(3))) &trans
+                &trans     &kp LC(LA(LWIN(0))) 	&trans          	&trans     			&trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+
+        }; 
+        
     };
 };
