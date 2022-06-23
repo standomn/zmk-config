@@ -15,9 +15,10 @@
 #define L_DEFAULT 0
 #define L_NAV 1
 #define L_DND 2
-#define L_SOCIAL 3
-#define L_CONFIG 4
-#define L_LAYOUT 5
+#define L_CALLS 3
+#define L_ALTCODE 4
+#define L_CONFIG 5
+#define L_LAYOUT 6
 
 &encoder_1 {
     status = "okay";
@@ -154,6 +155,27 @@
 				;
 		};
 		
+		
+		CHARMAP: CHARMAP {
+			label = "character map";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LWIN>
+				, <&macro_tap &kp R>
+				, <&macro_release &kp LWIN>
+				, <&macro_wait_time 50>
+				, <&macro_tap &kp C>
+				, <&macro_tap &kp H>
+				, <&macro_tap &kp A>
+				, <&macro_tap &kp R>
+				, <&macro_tap &kp M>
+				, <&macro_tap &kp A>
+				, <&macro_tap &kp P>
+				, <&macro_tap &kp ENTER>
+				;
+		};
+		
 	};
 	
     sensors {
@@ -173,7 +195,7 @@
                 &rgb_ug RGB_EFF  &kp KP_N7 	    &kp KP_N8       &kp KP_N9      	&kp KP_PLUS   
                 &kp C_MUTE       &kp KP_N4 	    &kp KP_N5       &kp KP_N6      	&trans
                 &mo L_CONFIG     &kp KP_N1      &kp KP_N2       &kp KP_N3      	&kp KP_ENTER
-                &kp LALT         &kp KP_N0 	    &trans          &kp KP_DOT     	&trans
+                &mo L_LAYOUT     &kp KP_N0 	    &trans          &kp KP_DOT     	&trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 
@@ -187,37 +209,51 @@
                 &trans      	&kp HOME		&kp UP          &kp PG_UP       &kp TAB   
                 &kp C_MUTE  	&kp LEFT		&kp SPACE       &kp RIGHT       &trans
                 &mo L_CONFIG    &kp END 		&kp DOWN        &kp PG_DN       &kp KP_ENTER
-                &kp BSPC    	&kp INS 		&trans          &kp DEL         &trans
+                &mo L_LAYOUT  	&kp INS 		&trans          &kp DEL         &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp UP DOWN>;
 
         };
 
         dungeons_and_dragons {
-            label = "D&D";
+            label = "RPGs";
             bindings = <
                 &trans           &kp LC(LA(F12))&kp LC(LA(F11)) &kp LC(LA(F10)) &kp LG(D)   
-                &trans           &to L_SOCIAL   &kp KP_DIVIDE   &kp KP_MULTIPLY	&kp KP_MINUS    
+                &trans           &to L_CALLS   &kp KP_DIVIDE   &kp KP_MULTIPLY	&kp KP_MINUS    
                 &trans           &kp F7      	&kp F8          &kp F9      	&kp KP_PLUS   
                 &kp C_MUTE       &kp F4     	&kp F5       	&kp F6      	&trans
                 &mo L_CONFIG     &kp F1     	&kp F2       	&kp F3      	&kp KP_ENTER
-                &kp BSPC         &kp F10     	&trans          &kp KP_DOT     	&trans
+                &mo L_LAYOUT     &kp F10     	&trans          &kp KP_DOT     	&trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
 
         }; 
         
-        social_controls {   
-            label = "Social";
+        call_controls {   
+            label = "Calls";
             bindings = <
                 &trans          &kp LC(LA(F12)) &kp LC(LA(F11)) &kp LC(LA(F10)) &kp LG(D)   
-                &trans          &to L_DEFAULT   &kp KP_DIVIDE   &kp KP_MULTIPLY	&kp KP_MINUS    
+                &trans          &to L_ALTCODE   &kp KP_DIVIDE   &kp KP_MULTIPLY	&kp KP_MINUS    
                 &trans      	&kp HOME		&kp UP          &kp PG_UP       &kp KP_PLUS   
                 &kp C_MUTE  	&kp LEFT		&kp SPACE       &kp RIGHT       &trans
                 &mo L_CONFIG    &kp END 		&kp DOWN        &kp PG_DN       &kp KP_ENTER
-                &kp BSPC    	&kp INS 		&trans          &kp DEL         &trans
+                &mo L_LAYOUT  	&kp INS 		&trans          &kp DEL         &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
+
+        }; 
+		
+        alt_codes {
+            label = "Alt Code";
+            bindings = <
+                &trans       	 &CHARMAP      	&LG(DOT)        &LG(R)  		&LG(D)   
+                &trans  		 &to L_DEFAULT  &kp KP_DIVIDE   &kp KP_MULTIPLY	&kp KP_MINUS    
+                &trans  		 &kp KP_N7 	    &kp KP_N8       &kp KP_N9      	&kp KP_PLUS   
+                &kp C_MUTE       &kp KP_N4 	    &kp KP_N5       &kp KP_N6      	&trans
+                &mo L_CONFIG     &kp KP_N1      &kp KP_N2       &kp KP_N3      	&kp KP_ENTER
+                &kp LALT         &kp KP_N0 	    &trans          &kp KP_DOT     	&trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
 
         }; 
         
@@ -229,7 +265,7 @@
                 &trans      	&trans          &trans        	&trans          &rgb_ug RGB_BRI
                 &bt BT_CLR  	&trans          &trans        	&trans          &trans    
                 &trans      	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3    &rgb_ug RGB_COLOR_HSB(360,0,100)
-                &mo L_LAYOUT    &trans          &trans          &trans          &trans           
+                &trans		    &trans          &trans          &trans          &trans           
             >;  
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
                 
