@@ -3,7 +3,7 @@ encoder_1: encoder_left {
         label = "encoder_1";
         a-gpios = <PIN_A (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <PIN_B (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <12>;
+        resolution = <30>;
     };
 
 encoder_2: encoder_right {
@@ -11,5 +11,5 @@ encoder_2: encoder_right {
         label = "encoder_2";
         a-gpios = <PIN_A (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <PIN_B (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <12>;
+        resolution = <30>;
     };
