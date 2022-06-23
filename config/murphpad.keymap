@@ -155,7 +155,6 @@
 				;
 		};
 		
-		
 		CHARMAP: CHARMAP {
 			label = "character map";
 			compatible = "zmk,behavior-macro";
@@ -176,6 +175,17 @@
 				;
 		};
 		
+		TV_POWER: TV_POWER {
+			label = "TV Power Button";
+			compatible = "zmk,behavior-macro";
+			#binding-cells = <0>;
+			bindings
+				= <&macro_press &kp LCTRL &kp LWIN &kp LALT>
+				, <&macro_tap &kp END>
+				, <&macro_release &kp LCTRL &kp LWIN &kp LALT>
+				;
+		};
+		
 	};
 	
     sensors {
@@ -190,7 +200,7 @@
         default_layer {
             label = "Numpad";
             bindings = <
-                &bt BT_CLR       &kp TAB      	&kp F5          &kp LC(LA(C))  	&kp LG(D)   
+                &bt BT_CLR       &TV_POWER      	&kp F5          &kp LC(LA(C))  	&kp LG(D)   
                 &rgb_ug RGB_TOG  &to L_NAV      &kp KP_DIVIDE   &kp KP_MULTIPLY	&kp KP_MINUS    
                 &rgb_ug RGB_EFF  &kp KP_N7 	    &kp KP_N8       &kp KP_N9      	&kp KP_PLUS   
                 &kp C_MUTE       &kp KP_N4 	    &kp KP_N5       &kp KP_N6      	&trans
@@ -204,7 +214,7 @@
         nav_layer {
             label = "Navigate";
             bindings = <
-                &bt BT_CLR  	&kp LA(LEFT) 	&kp F5          &kp LA(RIGHT)   &kp LG(D)   
+                &bt BT_CLR  	&TV_POWER 	&kp LA(LEFT)    &kp LA(RIGHT)   &kp LG(D)   
                 &trans      	&to L_DND   	&trans          &trans          &trans    
                 &trans      	&kp HOME		&kp UP          &kp PG_UP       &kp TAB   
                 &kp C_MUTE  	&kp LEFT		&kp SPACE       &kp RIGHT       &trans
@@ -246,7 +256,7 @@
         alt_codes {
             label = "Alt Code";
             bindings = <
-                &trans       	 &CHARMAP      	&kp LG(DOT)  	&kp LG(R)  		&kp LG(D)   
+                &trans       	 &CHARMAP      	&kp LG(DOT)		&kp LG(R)  		&kp LG(D)   
                 &trans  		 &to L_DEFAULT  &kp KP_DIVIDE   &kp KP_MULTIPLY	&kp KP_MINUS    
                 &trans  		 &kp KP_N7 	    &kp KP_N8       &kp KP_N9      	&kp KP_PLUS   
                 &kp C_MUTE       &kp KP_N4 	    &kp KP_N5       &kp KP_N6      	&trans
@@ -260,7 +270,7 @@
         fn_layer {
             label = "Config";
             bindings = <
-                &trans      	&trans          &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_COLOR_HSB(240,100,50)  
+                &trans      	&TV_POWER       &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_COLOR_HSB(240,100,50)  
                 &trans      	&trans          &trans        	&trans          &rgb_ug RGB_BRD     
                 &trans      	&trans          &trans        	&trans          &rgb_ug RGB_BRI
                 &bt BT_CLR  	&trans          &trans        	&trans          &trans    
@@ -274,7 +284,7 @@
         screen_setup {
             label = "Layout";
             bindings = <
-                &trans     		&trans   		&trans   		&trans  		&trans   
+                &trans     		&TV_POWER  		&trans   		&trans  		&trans   
                 &trans     		&trans   		&trans   		&trans  		&trans   
                 &trans     		&LAYOUT7 		&LAYOUT8 		&LAYOUT9 		&trans   
                 &trans     		&LAYOUT4 		&LAYOUT5 		&LAYOUT6 		&trans
