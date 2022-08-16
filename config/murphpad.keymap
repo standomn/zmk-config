@@ -270,7 +270,7 @@
         fn_layer {
             label = "Config";
             bindings = <
-                &trans      	&TV_POWER       &rgb_ug RGB_EFF &rgb_ug RGB_EFR &rgb_ug RGB_COLOR_HSB(240,100,50)  
+                &trans      	&TV_POWER       &rgb_ug RGB_EFF &rgb_ug RGB_EFR &kp KP_NUM  
                 &trans      	&trans          &trans        	&trans          &rgb_ug RGB_BRD     
                 &trans      	&trans          &trans        	&trans          &rgb_ug RGB_BRI
                 &bt BT_CLR  	&trans          &trans        	&trans          &trans    
