@@ -269,7 +269,7 @@
         }; 
         
         lightroom {
-            label = "lightroom";
+            label = "Photos";
             bindings = <
                 &bt BT_CLR  	&trans 			&kp LA(LEFT)    &kp LA(RIGHT)   &kp LG(D)   
                 &trans      	&to L_DEFAULT   	&trans          &trans          &trans    
